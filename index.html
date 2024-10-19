@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Note Map</title>
+
+    <!-- css baglantı -->
+    <link rel="stylesheet" href="assets/style.css">
+
+    <!-- Boostrap cdn -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Leaftet Kütüphanesi css -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+
+</head>
+
+<body>
+    <!-- Yan içerik -->
+    <aside>
+        <div class="head">
+            <h1>Notlar</h1>
+
+            <h1 id="add-title">Yeni Not</h1>
+            <i id="arrow" class="bi bi-chevron-up"></i>
+
+        </div>
+
+
+        <form>
+            <div class="field">
+                <label>Başlık</label>
+                <input type="text" required>
+            </div>
+            <div class="field">
+                <label>Tarih</label>
+                <input type="date" required>
+            </div>
+            <div class="field">
+                <label>Durum</label>
+                <select required autocomplete="off">
+                    <option value="" disabled selected>Seçiniz...</option>
+
+                    <option value="goto">Ziyaret</option>
+                    <option value="park">Park Yeri</option>
+                    <option value="home">Ev</option>
+                    <option value="job">iş</option>
+                </select>
+            </div>
+            <div class="buttons">
+                <button id="cancel">iptal</button>
+                <button>Ekle</button>
+            </div>
+        </form>
+
+
+        <ul>
+            <li>
+                <div>
+                    <p>Durak-1</p>
+                    <p> 16 May 2024</p>
+                    <p> iş</p>
+                </div>
+                <div class="icons">
+                    <i class="bi bi-airplane-fill" id="fly"></i>
+                    <i class="bi bi-trash3-fill" id="delete"></i>
+                </div>
+            </li>
+
+        </ul>
+
+    </aside>
+
+
+
+    <!--Harita  -->
+
+    <div id="map"></div>
+
+
+
+
+    <!-- Leaftet Kütüphanesi js -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <!-- Js baglantısı -->
+
+    <script src="./scripts/main.js" type="module"></script>
+</body>
+
+</html>
