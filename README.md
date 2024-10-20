@@ -7,3 +7,4 @@ Note-Map, kullanıcıların bir haritada konum tabanlı planlar oluşturmasına 
 HTML, CSS, javaScript
 
 # Ekran Gif
+![Video Screen1729414089661 (1)](https://github.com/user-attachments/assets/1f68fb2f-e8f4-4c09-a537-7515562abb40)
